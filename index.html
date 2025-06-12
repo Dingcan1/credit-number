@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Credit Card Number Generator | Free Online Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="language-selector">
+                <select id="languageSelect">
+                    <option value="en" selected>English</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+            <h1><i class="fas fa-credit-card"></i> <span data-i18n="header_title">Credit Card Number Generator</span></h1>
+            <p data-i18n="header_subtitle">Free online tool to generate random and valid credit card numbers</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="generator-card">
+            <div class="options">
+                <div class="option-group">
+                    <label for="cardCount" data-i18n="number_of_cards">Number of Cards:</label>
+                    <select id="cardCount">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+                
+                <div class="option-group">
+                    <label for="cardType" data-i18n="card_type">Card Type:</label>
+                    <select id="cardType">
+                        <option value="amex" selected data-i18n="american_express">American Express</option>
+                        <option value="mastercard" data-i18n="mastercard">MasterCard</option>
+                        <option value="visa" data-i18n="visa">Visa</option>
+                        <option value="jcb" data-i18n="jcb">JCB</option>
+                        <option value="random" data-i18n="random">Random</option>
+                    </select>
+                </div>
+                
+                <div class="option-group">
+                    <label for="format" data-i18n="output_format">Output Format:</label>
+                    <select id="format">
+                        <option value="text" selected data-i18n="text">Text</option>
+                        <option value="json" data-i18n="json">JSON</option>
+                        <option value="csv" data-i18n="csv">CSV</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="button-group">
+                <button id="generateBtn" class="primary-btn" data-i18n="generate_btn">Generate Credit Card Numbers</button>
+                <button id="copyBtn" class="secondary-btn"><i class="fas fa-copy"></i> <span data-i18n="copy_btn">Copy Results</span></button>
+            </div>
+            
+            <div class="result-container">
+                <h3 data-i18n="results">Results:</h3>
+                <pre id="result"></pre>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2 data-i18n="what_is_title">What is a Credit Card Number Generator?</h2>
+            <p data-i18n="what_is_content">A credit card generator is a software tool that generates random credit card numbers. Although these generated numbers may resemble real credit card numbers in format, they are not linked to any real bank accounts or financial institutions.</p>
+            
+            <h2 data-i18n="features_title">Features of Our Credit Card Number Generator</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-user-friendly"></i>
+                    <h3 data-i18n="feature1_title">User-Friendly Interface</h3>
+                    <p data-i18n="feature1_content">Simple and intuitive interface design that allows users of all technical levels to easily generate credit card numbers.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h3 data-i18n="feature2_title">Valid Results</h3>
+                    <p data-i18n="feature2_content">Each generated credit card number is carefully verified to ensure its validity and compliance with industry standards.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-coins"></i>
+                    <h3 data-i18n="feature3_title">Completely Free</h3>
+                    <p data-i18n="feature3_content">This is a completely free tool, with no costs incurred regardless of how many numbers you need to generate.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-user-lock"></i>
+                    <h3 data-i18n="feature4_title">No Registration Required</h3>
+                    <p data-i18n="feature4_content">No need to register or create an account to use the service, providing a hassle-free experience.</p>
+                </div>
+            </div>
+            
+            <h2 data-i18n="uses_title">Uses of Credit Card Generator</h2>
+            <ul class="usage-list">
+                <li><strong data-i18n="use1_title">Testing and Development:</strong> <span data-i18n="use1_content">Useful for developing and testing websites or applications that include credit card transactions, allowing developers to simulate real scenarios without compromising sensitive data.</span></li>
+                <li><strong data-i18n="use2_title">Trial Version Access:</strong> <span data-i18n="use2_content">Many applications offer free access or trial accounts for 30 days but require credit card details; you can bypass the credit card entry process using generated credit card numbers.</span></li>
+                <li><strong data-i18n="use3_title">Educational Resources:</strong> <span data-i18n="use3_content">For those involved in education or content creation, a credit card generator can be a successful teaching tool for explaining credit card types, security features, and more.</span></li>
+                <li><strong data-i18n="use4_title">Protecting Personal Information:</strong> <span data-i18n="use4_content">In an age of increasing cybersecurity concerns, a credit card generator is a useful tool for protecting personal information.</span></li>
+            </ul>
+            
+            <div class="disclaimer">
+                <h3 data-i18n="disclaimer_title">Disclaimer</h3>
+                <p data-i18n="disclaimer_content">This tool is for educational and testing purposes only. Generated credit card numbers cannot be used for actual transactions or fraudulent activities. Misuse of this tool may violate laws and could result in legal consequences.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer_text">&copy; 2023 Credit Card Number Generator | Free Online Tool</p>
+        </div>
+    </footer>
+    
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
